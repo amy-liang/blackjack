@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+/* General */
+
+html{
+    background: #211e2d;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vcenter{
+    position: fixed;
+    width: 100%;
+    top: 17.5%;
+    left: 0px;
+    visibility: hidden;
+}
+
+.hcenter{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttonGroup{
+    position: fixed;
+    width: 100%;
+    top: 80%;
+    left: 0px;
+}
+
+h1{
+    position: fixed;
+    font-weight: 300;
+    left: 50%;
+    margin-left: -150px;
+    top: 20px;
+}
+
+/* Buttons */
+
+button{
+    padding: 16px 24px;
+    margin: 4px;
+    min-width: 120px;
+    border: none;
+    color: white;
+    background-color: #3f3b54;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    transition: background-color 0.5s;
+}
+
+button:hover{
+    background-color: #2e2a3f;
+}
+
+#hitButton, #stayButton{
+    display: none;
+}
+
+/* Cards */
+
+.cardSection{
+    width: 70%;
+    margin: 10px auto;
+    position: relative;
+}
+
+div.card{
+    background-color: #eee;
+    width: 80px;
+    height: 105px;
+    margin: 0 8px;
+    display: inline-block;
+    /*visibility: hidden;*/
+}
+
+div.card p{
+    font-weight: 700;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    right: 20px;
+}
+
+.redCard{
+    color: #e03841;
+}
+
+.blackCard{
+    color: #303030;
+}
+
+div.card p.value{
+    font-size: 32px;
+    top: 0px;
+}
+
+div.card p.suit{
+    font-size: 40px;
+    top: -16px;
+}
