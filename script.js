@@ -86,10 +86,10 @@ function checkEndGame(){
         }
     }
 
-    if (playerScore > 21) {
+    if (playerScore > 21 || dealerScore == 21) {
         playerWon = false;
         gameOver = true;
-    } else if (dealerScore > 21){
+    } else if (dealerScore > 21 || playerScore == 21){
         playerWon = true;
         gameOver = true;
     } else if (gameOver) {
@@ -101,7 +101,6 @@ function checkEndGame(){
     }
 
     newGameButton.style.display
-
 
 }
 
@@ -228,9 +227,9 @@ newGameButton.addEventListener("click",function(){
     dealerCards = [getRandomCard("dealer"),getRandomCard("dealer")];
     playerCards = [getRandomCard("player"),getRandomCard("player")];
 
+    checkEndGame();
     showGameStatus();
 });
 
 // if dealer gets 5 cards, they win
 // calculate tie
-// dealt 21 immediately = win
